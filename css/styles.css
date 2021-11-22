@@ -144,11 +144,9 @@ body {
 
 .header-link:hover,
 .header-link:focus,
-.header-mail:hover,
-.header-tel:hover,
-.header-mail:focus,
-.header-tel:focus,
-.current,
+.header-contacts-link:hover,
+.header-contacts-link:focus,
+.header-link.current,
 .header-logo .accent:hover,
 .header-logo .accent-footer:hover,
 .footer-logo .accent:hover,
@@ -162,16 +160,25 @@ body {
   color: var(--accent-color);
 }
 
-.header-mail,
-.header-tel {
+.header-link {
   display: flex;
+  align-items: center;
+  justify-content: center;
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   padding-top: 32px;
-  padding-bottom: 32px;
+  padding-bottom: 32px;  
+}
+
+.header-contacts-icon {
+  fill: currentColor;
+}
+
+.header-text {
+  margin-left: 10px;
 }
 
 /* герой */
@@ -362,7 +369,7 @@ padding-top: 30px;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;  
-  margin-bottom: 0;
+  margin-bottom: 16px;
 }
 
 .team-item {
@@ -373,6 +380,43 @@ padding-top: 30px;
 
 .team-item:not(:last-child) {
   margin-right: 30px;
+}
+
+.team-social-list {
+  display: flex;
+  justify-content: center;
+}
+
+.team-social-item {
+  width: 44px;
+  height: 44px;
+}
+
+.team-social-item + .team-social-item {
+  margin-left: 10px;
+}
+
+.team-social-link {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+}
+
+.team-social-icon {
+  fill: #AFB1B8;
+}
+
+.team-social-link:hover,
+.team-social-link:focus {
+  background-color: var(--accent-color); 
+}
+
+.team-social-link:hover .team-social-icon,
+.team-social-link:focus .team-social-icon {
+  fill: var(--secondary-text-color);
 }
 
 .clients {
