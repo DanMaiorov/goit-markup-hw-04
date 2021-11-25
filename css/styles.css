@@ -150,7 +150,6 @@ body {
 }
 
 .header-link {
-  display: flex;
   align-items: center;
   justify-content: center;
   color: var(--title-text-color);
@@ -162,12 +161,13 @@ body {
   padding-bottom: 32px;  
 }
 
-.header-contacts-icon {
-  fill: currentColor;
+.header-mail, .header-tel {
+  color: var(--primary-text-color);
 }
 
-.header-text {
-  margin-left: 10px;
+.header-contacts-icon {
+  fill: currentColor;
+  margin-right: 10px;
 }
 
 /* герой */
@@ -452,10 +452,6 @@ body {
 }
 
 .clients-list {
-  display: flex;  
-}
-
-.clients-list {
   display: flex;
   justify-content: center;
 }
@@ -469,7 +465,7 @@ body {
 
 .clients-item:hover,
 .clients-item:focus { 
-  outline: 1px solid var(--accent-color);  
+  border-color: var(--accent-color);  
 }
 
 .clients-item + .clients-item {
@@ -491,13 +487,8 @@ body {
 
 .clients-link:hover,
 .clients-link:focus { 
-  color: var(--accent-color);  
+  color: var(--accent-color);
 }
-
-/* .clients-link:hover .clients-icon,
-.clients-link:focus .clients-icon {
-  fill: var(--accent-color);
-} */
 
 /* footer */
 
@@ -656,8 +647,7 @@ body {
 .portfolio-category .portfolio-btn-current:hover,
 .portfolio-category .portfolio-btn-current:hover {
   color: var(--secondary-text-color);
-  background-color: var(--accent-color);
-  border-color: var(--accent-color);
+  background-color: var(--accent-color);  
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
